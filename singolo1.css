@@ -1,0 +1,51 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+.wrapper{
+    width: 1020px;
+    margin: 0 auto;
+}
+header{
+    background-color: #2d303a;
+    display: flex;
+    justify-content: space-between;
+    height: 95px;
+    align-items: center;
+}
+
+.logotip{
+        font-size: 18px;
+        font-family: "Lato";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        margin-left: 40px;
+}
+
+span{
+color:#f06c64
+}
+
+.navigation{
+    display: flex;
+}
+.navigation_item{
+    font-size: 12px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-left: 30px;
+}
+.last{
+    margin-right: 40px;
+}
+.active {
+    font-size: 12px;
+    font-family: "Lato";
+    color: rgb(240, 108, 100);
+    font-weight: bold;
+}
+main{
+    height: 600px;
+    background-color: #f06c64;
+}
