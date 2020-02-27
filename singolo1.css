@@ -28,6 +28,7 @@ color:#f06c64
 
 .navigation{
     display: flex;
+
 }
 .navigation_item{
     font-size: 12px;
@@ -49,3 +50,43 @@ main{
     height: 600px;
     background-color: #f06c64;
 }
+
+.iphones{
+    display: flex;
+    align-items: center;
+    width: 790px;
+    justify-content: space-around;
+}
+
+.phoneV_main{
+    position: relative;
+}
+
+.phoneV{
+    width: 220px;
+    height: 455px;
+}
+
+.photophoneV{
+    position: absolute;
+    left: 14px;
+    top: 50px;
+    width: 168px;
+    height: 315px;
+}
+.phoneH_main{
+    position: relative;
+}
+
+.phone_horizontal{
+    width: 455px;
+    height: 220px;
+}
+
+.image_horizontal{
+    position: absolute;
+    left: 56px;
+    top: 17px;
+    width: 315px;
+    height: 168px;
+}   
