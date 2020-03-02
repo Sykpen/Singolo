@@ -52,9 +52,9 @@ main{
 }
 
 .iphones{
+    height: 600px;
     display: flex;
     align-items: center;
-    width: 790px;
     justify-content: space-around;
 }
 
