@@ -6,6 +6,7 @@ body{
     width: 1020px;
     margin: 0 auto;
 }
+
 header{
     background-color: #2d303a;
     display: flex;
@@ -89,4 +90,46 @@ main{
     top: 17px;
     width: 315px;
     height: 168px;
-}   
+}
+
+.servces{
+    background-color: #f2f2f2;
+}
+
+h3{
+    color: #666d89;
+    margin-top: 0px;
+    padding-top: 68px;
+}
+
+.services_text{
+    margin-left: 40px;
+    margin-right:40px;
+    font-family: "Lato";
+}
+
+.services_maim{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    margin-left:40px;
+}
+.services_maim_item{
+    flex-shrink: 0;
+    width: 300px;
+    display: flex;
+}
+
+.services_maim_item_image{
+    margin-right: 20px;
+}
+
+.services_maim_item_content{
+    color: #767e9e;
+    font-size:12px;
+}
+h4{
+    font-size:18px;
+    margin-top: 0px;
+    color:#666d89;
+}
