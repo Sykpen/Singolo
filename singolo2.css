@@ -16,6 +16,25 @@ body{
     height: 871px;
 }
 
+.portfolio_big_text{
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato",sans-serif;
+    font-weight: 900;
+    padding-top: 67px;
+    padding-bottom: 33px;
+    margin: 0px;
+}
+
+.portfolio_small_text{
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato",sans-serif;
+    font-weight: 300;
+}
+
 .portfolio_flex{
     display: flex;
     flex-wrap: wrap;
@@ -25,4 +44,65 @@ body{
 
 .portfolio_flex_item{
     margin-bottom: 18px;
+}
+
+.small_blocks{
+    display: flex;
+}
+
+.small_block{
+border: 1px solid #767e9e;
+color: #767e9e;
+border-radius: 5px;
+padding: 6px;
+font-size: 12px;
+margin-right:10px;
+margin-bottom: 18px;
+}
+
+.active{
+    border: 1px solid white;
+    color: white;
+}
+
+.anketa_flex{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+.anketa_flex_item{
+    width: 300px;
+}
+
+.icons{
+    display: flex;
+}
+
+.icons_item{
+    margin-right: 8px;
+    margin-bottom: 67px;
+}
+
+.portfolio_wrapper{
+    background-color: #f2f2f2;
+}
+
+.anketa_item_name{
+    font-size: 18px;
+    color: #666d89;
+    font-family: "Lato",sans-serif;
+    font-weight: 900;
+}
+
+.anketa_item_text{
+    font-size: 12px;
+    color: #767e9e;
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+}
+
+.white_line{
+    height: 6px;
+    background-color: white;
 }
