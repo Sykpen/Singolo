@@ -28,7 +28,19 @@ header{
     align-items: center;
     text-transform: uppercase;
 }
-
+.navigation_item:not(:last-child)::after{
+    content: ".";
+    position: relative;
+    bottom: 3px;
+    left: 13px;
+    font-weight: 900;
+    font-size: 19px;
+    font-family: "Lato";
+    color: #494e62;
+}
+.navigation_item .last::after{
+    content: none;
+}
 .flex_header{
     display: flex;
     justify-content: space-between;
@@ -60,7 +72,7 @@ color:#f06c64
     font-family: "Lato";
     color: rgb(255, 255, 255);
     font-weight: bold;
-    margin-left: 29px;
+    margin-left: 25px;
 }
 
 .active {
@@ -213,7 +225,9 @@ h4{
 
 .portfolio{
     background-color: #2d303a;
+    box-sizing: border-box;
     height: 870px;
+    border-bottom: 6px solid #323746;
 }
 
 .portfolio_big_text{
