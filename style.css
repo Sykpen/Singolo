@@ -529,3 +529,7 @@ footer{
 .footer_icons_item:hover{
     cursor: pointer;
 }
+
+.last{
+    margin-top: 5px;
+}
