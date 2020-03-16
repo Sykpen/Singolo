@@ -28,6 +28,8 @@ header{
     align-items: center;
     text-transform: uppercase;
 }
+
+
 .navigation_item:not(:last-child)::after{
     content: ".";
     position: relative;
@@ -74,12 +76,18 @@ color:#f06c64
     font-weight: bold;
     margin-left: 25px;
 }
-
+.navigation a{
+     text-decoration: none; 
+     color: rgb(255, 255, 255);
+     font-size: 12px;
+     font-family: "Lato";
+     font-weight: bold;
+}
 .active {
-    font-size: 12px;
-    font-family: "Lato";
     color: rgb(240, 108, 100);
-    font-weight: bold;
+}
+.hidefoto{
+    opacity: 0;
 }
 main{
     box-sizing: border-box;
@@ -91,7 +99,7 @@ main{
 .iphones{
     margin:0 auto;
     height: 594px;
-    width: 940px;
+    width: 800px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -106,10 +114,18 @@ main{
 }
 
 .left_arrow{
+    position: absolute;
+    top:350px;
+    left: 40px;
     width: 70px;
+    z-index: 4;
 }
 .right_arrow{
+    position: absolute;
+    top:350px;
+    left: 920px;
     width: 70px;
+    z-index: 4;
 }
 .left_arrow, .right_arrow:hover{
     cursor: pointer;
@@ -269,6 +285,7 @@ h4{
     margin-top: 3px;
     height: 621px;
     overflow: hidden;
+    border: none !important;
 }
 
 .portfolio_flex_item{
@@ -278,12 +295,14 @@ h4{
 .portfolio_flex_item img{
     width: 220px;
     height: 186px;
+    box-sizing: border-box;
 }
 
 .small_blocks{
     display: flex;
     box-sizing: border-box;
     height: 47px;
+    border: none !important;
 }
 
 .small_block{
@@ -532,4 +551,65 @@ footer{
 
 .last{
     margin-top: 5px;
+}
+
+.portfolio_active{
+    border: 5px solid #F06C64;
+}
+
+.slide2{
+    position: absolute;
+    opacity: 0;
+    width: 940px;
+}
+
+.slide2hide{
+    opacity: 1;
+}
+
+.slide1hide{
+    display: none;
+}
+
+.slide1{
+    position: absolute;
+}
+
+.hidden_foto{
+    position: absolute;
+    left: 398px;
+    top: 112px;
+    width: 201px;
+    height: 355px;
+    background-color: black;
+}
+
+.hidden_foto_opacity{
+    opacity: 0;
+}
+
+#message_block {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0008;
+}
+
+.message_hidden{
+    display: none;
+}
+
+#message{
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    border: 2px solid black;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    background-color: blanchedalmond;
 }
