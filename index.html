@@ -10,40 +10,56 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="top">
         <header>
-            <div class="inside_wrapper flex_header">
-                <div class="logotip">
-                    <h1>SINGOLO</h1><span>*</span>
-                </div>
-                <div class="navigation" id="navigation">
-                    <a href="#navigation"><div class="navigation_item active">Home</div></a>
-                    <a href="#services"><div class="navigation_item">Services</div></a>
-                    <a href="#portfolio1"><div class="navigation_item">Portfolio</div></a>
-                    <a href="#about"><div class="navigation_item">About</div></a>
-                    <a href="#contact"><div class="navigation_item">Contact</div></a>
+            <div class="header_wrapper">
+                <div class="inside_wrapper flex_header">
+                    <div class="logotip">
+                        <h1>SINGOLO</h1><span>*</span>
+                    </div>
+                    <div class="navigation" id="navigation">
+                        <a id="home_nav">
+                            <div class="navigation_item active">Home</div>
+                        </a>
+                        <a id="services_nav">
+                            <div class="navigation_item">Services</div>
+                        </a>
+                        <a id="portfolio_nav">
+                            <div class="navigation_item">Portfolio</div>
+                        </a>
+                        <a id="about_nav">
+                            <div class="navigation_item">About</div>
+                        </a>
+                        <a id="contact_nav">
+                            <div class="navigation_item">Contact</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>
-        <main>
-            <div class="left_arrow" id="leftarrow"><img src="./assets/arrow_left.png"></div>
-            
-            <div class="slide2" id="slide2"><img src="./assets/Slide-2.png">
-                <div class="hidden_foto hidden_foto_opacity" id="hidden_foto"></div>
-            </div>
-            <div class="iphones" id="slide1">
-                <div class="phones2">
-                    <div class="phoneV_main">
-                        <img src="assets/iPhoneVertical.png" alt="Foto Vertikalno" class="phoneV">
-                        <img src="assets/photoinvertical.png" alt="Foto Vertikalno" class="imageV" id="foto1">
+        <main id="main">
+            <div class="main_wrapper">
+                <div class="left_arrow" id="leftarrow"><img src="./assets/arrow_left.png"></div>
+                <div class="items-continer">
+                    <div class="iphones item slide_active" id="slide1">
+                        <div class="phones2">
+                            <div class="phoneV_main">
+                                <img src="assets/iPhoneVertical.png" alt="Foto Vertikalno" class="phoneV">
+                                <img src="assets/photoinvertical.png" alt="Foto Vertikalno" class="imageV" id="foto1">
+                            </div>
+                            <div class="phoneH_main">
+                                <img src="assets/iPhoneHorizontal.png" alt="Foto Vertikalno" class="phone_horizontal">
+                                <img src="assets/photoHorizontal.png" alt="Foto Vertikalno" class=image_horizontal
+                                    id="foto2">
+                            </div>
+                        </div>
                     </div>
-                    <div class="phoneH_main">
-                        <img src="assets/iPhoneHorizontal.png" alt="Foto Vertikalno" class="phone_horizontal">
-                        <img src="assets/photoHorizontal.png" alt="Foto Vertikalno" class=image_horizontal id="foto2">
+                    <div class="slide2 item" id="slide2"><img src="./assets/Slide-2.png">
+                        <div class="hidden_foto hidden_foto_opacity" id="hidden_foto"></div>
                     </div>
                 </div>
+                <div class="right_arrow" id="rightarrow"><img src="./assets/arrow_right.png"></div>
             </div>
-            <div class="right_arrow" id="rightarrow"><img src="./assets/arrow_right.png"></div>
         </main>
         <div class="servces" id="services">
             <div class="inside_wrapper">
@@ -224,7 +240,7 @@
                         <div>
                             <form>
                                 <input type="text" placeholder="Name (Required)" id="firsttext" required>
-                                <input type="email" placeholder="Email (Required)"  id="email" required>
+                                <input type="email" placeholder="Email (Required)" id="email" required>
                                 <input type="text" placeholder="Subject" id="secondtext">
                                 <textarea placeholder="Describe your project in detail..." id="textarea"></textarea>
                                 <button class="submit" id="submit">Submit</button>
@@ -241,7 +257,8 @@
                             <div class="contact_info_tag"><img src="./assets/location_small.png">Elm St. 14/05 Lost City
                             </div>
                             <div class="contact_info_tag"><img src="./assets/phone_small.png"><a
-                                    href="tel:03528 331 86 35">03528 331 86 35</a></div>
+                                    href="tel:03528 331 86 35">03528 331 86 35</!-->
+                            </div>
                             <div class="contact_info_tag"><img src="./assets/mail_small.png"><a
                                     href="mailto:info@singolo.com">info@singolo.com</a></div>
                         </div>

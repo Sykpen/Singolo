@@ -92,16 +92,54 @@ let slide1 = document.getElementById('slide1');
 let slide2 = document.getElementById('slide2');
 let leftarrow = document.getElementById('leftarrow');
 let rightarrow = document.getElementById('rightarrow');
+let items = document.querySelectorAll('.item');
+let currentItem = 0;
+let isEnabled = true;
+let main = document.getElementById('main')
 
-leftarrow.addEventListener('click', () => {
-    slide1.classList.toggle('slide1hide')
-    slide2.classList.toggle('slide2hide')
+function changeCurrentItem(n) {
+    currentItem = (n + items.length) % items.length;
+}
+
+function hideItem(direction) {
+    isEnabled = false;
+	items[currentItem].classList.add(direction);
+	items[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('slide_active', direction);
+	});
+}
+
+function showItem(direction) {
+	items[currentItem].classList.add('next', direction);
+	items[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('next', direction);
+        this.classList.add('slide_active');
+        isEnabled = true;
+	});
+}
+
+function nextItem(n) {
+	hideItem('to-left');
+	changeCurrentItem(n + 1);
+	showItem('from-right');
+}
+
+function previousItem(n) {
+	hideItem('to-right');
+	changeCurrentItem(n - 1);
+	showItem('from-left');
+}
+
+leftarrow.addEventListener('click', function() {
+        previousItem(currentItem);
+        main.classList.toggle('new_color');
 });
 
-rightarrow.addEventListener('click', () => {
-    slide1.classList.toggle('slide1hide')
-    slide2.classList.toggle('slide2hide')
+rightarrow.addEventListener('click', function() {
+        nextItem(currentItem);
+        main.classList.toggle('new_color');
 });
+
 
 let submit_button = document.getElementById('submit');
 let closed_button = document.getElementById('closed');
@@ -137,3 +175,26 @@ closed_button.addEventListener('click', () =>{
     secondtext.value = '';
     textarea.value = '';
 })
+
+let home = document.getElementById('home_nav');
+let services = document.getElementById('services_nav');
+let portfolio = document.getElementById('portfolio_nav');
+let about = document.getElementById('about_nav');
+let contact = document.getElementById('contact_nav');
+
+home.addEventListener('click', () => {
+    document.getElementById('top').scrollIntoView({block:"start", behavior: "smooth"});
+})
+services.addEventListener('click', () => {
+    document.getElementById('services').scrollIntoView({block:"center", behavior: "smooth"});
+})
+portfolio.addEventListener('click', () => {
+    document.getElementById('portfolio1').scrollIntoView({block:"center", behavior: "smooth"});
+})
+about.addEventListener('click', () => {
+    document.getElementById('about').scrollIntoView({block:"center", behavior: "smooth"});
+})
+contact.addEventListener('click', () => {
+    document.getElementById('contact').scrollIntoView({block:"center", behavior: "smooth"});
+})
+
