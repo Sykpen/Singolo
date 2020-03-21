@@ -143,6 +143,8 @@ rightarrow.addEventListener('click', function() {
 
 let submit_button = document.getElementById('submit');
 let closed_button = document.getElementById('closed');
+let first = document.getElementById('firsttext');
+let second = document.getElementById('email');
 let secondtext = document.getElementById('secondtext');
 let textarea = document.getElementById('textarea');
 let result = document.getElementById('result');
@@ -172,6 +174,8 @@ submit_button.addEventListener('click', () =>{
 
 closed_button.addEventListener('click', () =>{
     document.getElementById('message_block').classList.add('message_hidden');
+    first.value = '';
+    second.value = '';
     secondtext.value = '';
     textarea.value = '';
 })
