@@ -668,3 +668,78 @@ footer{
     height: 200px;
     background-color: blanchedalmond;
 }
+
+@media (max-width: 768px) {
+header{
+    width: 768px;
+}
+.flex_header{
+    width: 768px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+main{
+    height: 451.76px;
+}
+.main_wrapper{
+    width: 768px;
+}
+.items-continer{
+    width: 768px;
+}
+.phoneV_main{
+    width: 180.85px;
+    height: 363.74px;   
+}
+.phoneV{
+    width: 180.85px;
+    height: 363.74px;   
+}
+.imageV{
+    width: 141.55px;
+    height: 250.73px;
+    top: 49px;   
+}
+.phone_horizontal{
+    width: 363.74px;
+    height: 180.85px; 
+} 
+.image_horizontal{
+    width: 250.73px;
+    height: 141.55px;
+    left: 48px;
+}
+.iphones{
+    height: 451.76px;
+}
+.phones2{
+    width: 599px;
+    margin-left: 83px;
+}
+.left_arrow{
+    top: 50%;
+}
+.right_arrow{
+    top: 50%;
+    left: 670px;
+}
+.slide2{
+    width: 768px;
+    height: 451.76px;
+}
+.slide2_img{
+    width: 768px;
+    height: 451.76px;
+}
+.hidden_foto{
+    top: 84px;
+    width: 151px;
+    height: 268px;
+    left: 300px;
+}
+.inside_wrapper_services{
+    width: 768px;
+
+}
+  }
