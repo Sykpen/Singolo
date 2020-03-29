@@ -200,5 +200,52 @@ about.addEventListener('click', () => {
 })
 contact.addEventListener('click', () => {
     document.getElementById('contact').scrollIntoView({block:"center", behavior: "smooth"});
+});
+
+let burger_menu = document.getElementById('borger_menu');
+let dark_navigation = document.getElementById('dark_navigation');
+
+burger_menu.addEventListener('click', () => {
+    dark_navigation.classList.toggle('dark_side_hidden');
+    burger_menu.classList.toggle('povorot')
 })
+
+let home1 = document.getElementById('home_nav_dark');
+let services1 = document.getElementById('services_nav_dark');
+let portfolio1 = document.getElementById('portfolio_nav_dark');
+let about1 = document.getElementById('about_nav_dark');
+let contact1 = document.getElementById('contact_nav_dark');
+
+home1.addEventListener('click', () => {
+    document.getElementById('top').scrollIntoView({block:"start", behavior: "smooth"});
+    dark_navigation.classList.toggle('dark_side_hidden');
+    burger_menu.classList.toggle('povorot')
+})
+services1.addEventListener('click', () => {
+    document.getElementById('services').scrollIntoView({block:"center", behavior: "smooth"});
+    dark_navigation.classList.toggle('dark_side_hidden');
+    burger_menu.classList.toggle('povorot')
+})
+portfolio1.addEventListener('click', () => {
+    document.getElementById('portfolio1').scrollIntoView({block:"center", behavior: "smooth"});
+    dark_navigation.classList.toggle('dark_side_hidden');
+    burger_menu.classList.toggle('povorot')
+})
+about1.addEventListener('click', () => {
+    document.getElementById('about').scrollIntoView({block:"center", behavior: "smooth"});
+    dark_navigation.classList.toggle('dark_side_hidden');
+    burger_menu.classList.toggle('povorot')
+})
+contact1.addEventListener('click', () => {
+    document.getElementById('contact').scrollIntoView({block:"center", behavior: "smooth"});
+    dark_navigation.classList.toggle('dark_side_hidden');
+    burger_menu.classList.toggle('povorot')
+});
+
+
+
+
+
+
+
 

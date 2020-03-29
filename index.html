@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="body">
     <div class="wrapper" id="top">
         <header>
             <div class="header_wrapper">
                 <div class="inside_wrapper flex_header">
-                    <div class="hidden_burger_menu"><img src="./assets/Burger-menu-icon.png"></div>
+                    <div class="hidden_burger_menu" id="borger_menu_block"><img src="./assets/Burger-menu-icon.png" id="borger_menu"></div>
                     <div class="logotip">
                         <h1>SINGOLO</h1><span>*</span>
                     </div>
                     <div class="navigation" id="navigation">
-                        <a id="home_nav">
+                         <a id="home_nav">
                             <div class="navigation_item active">Home</div>
                         </a>
                         <a id="services_nav">
@@ -33,7 +33,7 @@
                         </a>
                         <a id="contact_nav">
                             <div class="navigation_item">Contact</div>
-                        </a>
+                        </a>                             
                     </div>
                 </div>
             </div>
@@ -167,7 +167,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="about_us_main">
                 <div class="inside_wrapper" id="about">
                     <div class="about_text">
                       <p class="portfolio_big_text about_us">About Us</p>
@@ -296,6 +296,32 @@
             <button id="closed">ОК</button>
         </div>
     </div>
+            <div class="navigation dark_side_of_navigation dark_side_hidden" id="dark_navigation">
+                <div class="dark_side_of_navigation_items">
+                 <a id="home_nav_dark">
+                    <div class="navigation_item active">Home</div>
+                </a>
+                <a id="services_nav_dark">
+                    <div class="navigation_item">Services</div>
+                </a>
+                <a id="portfolio_nav_dark">
+                    <div class="navigation_item">Portfolio</div>
+                </a>
+                <a id="about_nav_dark">
+                    <div class="navigation_item">About</div>
+                </a>
+                <a id="contact_nav_dark">
+                    <div class="navigation_item">Contact</div>
+                </a>                           
+                </div>
+            </div>    
+
+
+
+
+
+
+
     <script src="index.js"></script>
 </body>
 

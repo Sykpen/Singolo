@@ -12,6 +12,10 @@ body{
     margin: 0 auto;
 }
 
+.dark_side_hidden{
+    display: none;
+}
+
 header{
     position: sticky;
     top: 0;
@@ -671,13 +675,13 @@ footer{
     background-color: blanchedalmond;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1019px) {
 header{
-    width: 768px;
+    width: 100%;
     border-bottom: none;
 }
 .flex_header{
-    width: 768px;
+    width: 100%;
     box-sizing: border-box;
     padding-left: 40px;
     padding-right: 40px;
@@ -826,13 +830,17 @@ form{
     padding-left: 40px;
     padding-right: 40px;
 }
+.dark_side_hidden{
+    display: none;
+}
 }
 
-@media (max-width: 375px){
+@media (min-width: 320px) and (max-width: 767px){
 header{
     width: 100%;
     height: 71px;
 }
+
 .flex_header{
     width: 375px;
     justify-content: center;
@@ -933,12 +941,8 @@ main{
 .inside_wrapper_services{
     width: 375px;
 }
-.inside_wrapper_portfolio{
-    width: 375px;
-}
 .portfolio_wrapper{
-    width: 375px;
-    height: auto;
+    background-color: #2d303a;
 }
 h3{
     padding-top: 42px;
@@ -952,7 +956,12 @@ h3{
     height: auto;
 }
 .portfolio{
+    width: 375px;
     height: auto;
+    margin: 0 auto;
+}
+.about_us_main{
+    background-color: #E5E5E5;
 }
 .portfolio_flex{
     height: auto;
@@ -1071,5 +1080,32 @@ input{
 }
 footer{
     line-height: normal;
+}
+.dark_side_of_navigation{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 65vw;
+    height: 100vh;
+    background-color: #2d303a;
+    display: block;
+    z-index: 6;
+}
+.dark_side_hidden{
+    display: none;
+}
+.dark_side_of_navigation_items{
+    margin-top: 232px;
+    margin-left: 71px;
+}
+.dark_side_of_navigation_items .navigation_item{
+    margin-top: 27px;
+}
+.povorot{
+    transform: rotate(90deg);
+    transition-duration: 0.3s;
+}
+#body{
+    overflow-x: hidden;
 }
 }
