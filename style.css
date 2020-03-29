@@ -178,7 +178,6 @@ main{
 
 .servces{
     background-color: #f2f2f2;
-    height: 494px;
 }
 
 h3{
@@ -205,7 +204,6 @@ h3{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 45px;
-    margin-bottom: 34px;
 }
 .services_maim_item{
     flex-shrink: 0;
@@ -367,6 +365,10 @@ letter-spacing: 0.9px;
 
 .icons_item:hover{
     cursor: pointer;
+}
+
+.hidden_burger_menu{
+    display: none;
 }
 
 .anketa_item_text{
@@ -672,6 +674,7 @@ footer{
 @media (max-width: 768px) {
 header{
     width: 768px;
+    border-bottom: none;
 }
 .flex_header{
     width: 768px;
@@ -740,6 +743,333 @@ main{
 }
 .inside_wrapper_services{
     width: 768px;
-
 }
-  }
+.services_maim{
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 30px;
+}
+.services_text{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+h3{
+    padding-top: 40px;
+}
+.portfolio_flex_item img{
+    width: 216px;
+    height: 183px;
+}
+.inside_wrapper_portfolio{
+    width: 768px;
+}
+.portfolio{
+    height: 1102px;
+}
+.portfolio_flex{
+    height: 794px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.portfolio_text_wrapper{
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.anketa_flex_item{
+    width: 219px;
+    height: 430px;
+}
+#about{
+    width: 768px;
+}
+.img_about{
+    width: 218px;
+    height: 218px;
+}
+.anketa_flex{
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.about_text{
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.contact_wrapper_responsive{
+    width: 768px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 631px;
+}
+form{
+    box-sizing: border-box;
+    width: 442px;
+}
+#textarea{
+    width: 426px;
+    height: 144px;
+}
+#submit{
+    width: 455px;
+}
+.contact_info{
+    width: 221px;
+}
+.inside_wrapper_footer{
+    width: 768px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+}
+
+@media (max-width: 375px){
+header{
+    width: 100%;
+    height: 71px;
+}
+.flex_header{
+    width: 375px;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.navigation{
+    display: none;
+}
+.logotip{
+    margin-top: 0px;
+}
+.hidden_burger_menu{
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 26px;
+}
+main{
+    height: 220px;
+}
+.main_wrapper{
+    width: 375px;
+    height: 220px;
+}
+.items-continer{
+    width: 375px;
+}
+.phoneV_main{
+    width: 88.3px;
+    height: 171.61px;   
+}
+.phoneV{
+    width: 88.3px;
+    height: 171.61px;   
+}
+.imageV{
+    width: 69.12px;
+    height: 122.43px;
+    top: 23px;
+    left: 7px; 
+}
+.phone_horizontal{
+    width: 171.61px;
+    height: 88.3px; 
+} 
+.image_horizontal{
+    width: 122.43px;
+    height: 69.12px;
+    left: 24px;
+    top: 5px;
+}
+.iphones{
+    height: auto;
+}
+.phones2{
+    width: 292.72px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.left_arrow{
+    left: 9px;
+    top: 44%;
+    width: 30px;
+}
+.right_arrow{
+    top: 44%;
+    left: 337px;
+    width: 30px;
+}
+.slide2{
+    width: 375px;
+    height: 220px;
+}
+.slide2_img{
+    width: 375px;
+    height: 220px;
+}
+.hidden_foto{
+    top: 40px;
+    width: 75px;
+    height: 130px;
+    left: 146px;
+}
+.services_maim{
+    box-sizing: border-box;
+    padding-left: 32px;
+    padding-right: 43px;
+    margin-top: 30px;
+}
+.services_maim_item{
+    margin-bottom: 15px;
+}
+.services_text{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.inside_wrapper_services{
+    width: 375px;
+}
+.inside_wrapper_portfolio{
+    width: 375px;
+}
+.portfolio_wrapper{
+    width: 375px;
+    height: auto;
+}
+h3{
+    padding-top: 42px;
+}
+.portfolio_flex_item img{
+    width: 216px;
+    height: 183px;
+}
+.inside_wrapper_portfolio{
+    width: 375px;
+    height: auto;
+}
+.portfolio{
+    height: auto;
+}
+.portfolio_flex{
+    height: auto;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.portfolio_flex_item img{
+    width: 151px;
+    height: 128px;
+}
+.portfolio_text_wrapper{
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.anketa_flex_item{
+    width: 314px;
+    height: 440px;
+}
+#about{
+    width: 375px;
+}
+.img_about{
+    width: 314px;
+    height: 314px;
+}
+.anketa_flex{
+    box-sizing: border-box;
+    padding-left: 31px;
+    padding-right: 30px;
+}
+.about_text{
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.anketa_flex{
+    flex-wrap: wrap;
+}
+.portfolio_small_text_60{
+    height: auto;
+}
+.icons{
+    margin-top: 9px;
+}
+.anketa_flex_item{
+    margin-top: 34px;
+}
+.portfolio_big_text {
+    padding-top: 33px;
+}
+.first_anketa_flex_item{
+    margin-top: 14px;
+}
+.last_anketa_flex_item{
+    margin-bottom: 45px;
+}
+.white_line{
+    display: none;
+}
+.contact_wrapper_responsive{
+    width: 375px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+}
+form{
+    box-sizing: border-box;
+    width: 315px;
+}
+input{
+    box-sizing: border-box;
+}
+#textarea{
+    box-sizing: border-box;
+    width: 315px;
+    height: 159px;
+}
+#submit{
+    box-sizing: border-box;
+    width: 315px;
+}
+.contact_info{
+    width: 315px;
+}
+.contact_flex{
+    flex-wrap: wrap;
+    margin-top: 19px;
+}
+.contact_wrapper{
+    height: auto;
+}
+.red_line{
+    display: none;
+}
+.contact_info_tag_last{
+    margin-bottom: 42px;
+}
+.contact_info_text{
+    margin-bottom: 5px;
+}
+.inside_wrapper_footer{
+    width: 375px;
+    height: 76px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.copyright_block{
+    display: none;
+}
+.footer_content{
+    height: 76px;
+    justify-content: center;
+}
+footer{
+    line-height: normal;
+}
+}
